@@ -31,3 +31,23 @@ h1 {
     font-size: 1.5em;
     font-weight: bold;
 }
+
+.calendar_section {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 3px solid black;
+}
+
+.calendar_grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.calendar_square {
+    width: 35px;
+    height: 35px;
+    background-color: #d3d3d3;
+    border: 1px solid #000;
+}
