@@ -9,3 +9,6 @@ def index(request):
 
 def add(request):
     return render(request, "tasks/add.html")
+
+def stats(request):
+    return render(request, "tasks/stats.html")
