@@ -50,4 +50,12 @@ h1 {
     height: 35px;
     background-color: #d3d3d3;
     border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passed_day {
+    background-color: rgba(228, 228, 228, 0.411);
+    border-radius: 50%;
 }

@@ -24,36 +24,12 @@
         <div class="calendar_section">
             <div class="calendar_grid">
                 <!-- This would be replaced by a Django loop like  -->
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
-                <div class="calendar_square"></div>
+                {% for day in days_last_month %}
+                <div class="passed_day calendar_square">{{day}}</div>
+                {% endfor %} 
+                {% for day in days_in_month %}
+                <div class="calendar_square">{{day}}</div>
+                {% endfor %}
             </div>
         </div>
     </div>
