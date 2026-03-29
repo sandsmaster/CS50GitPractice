@@ -1,0 +1,24 @@
+{% extends "tasks/layout.html" %}
+{% load static %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'tasks/style.css' %}" />
+{% endblock %}
+{% block body %}
+    <div class="stats_view">
+        <h1>This is the stats page</h1>
+        <div class="stats_container">
+            <div class="stat_item">
+                <h3>Tasks Completed</h3>
+                <p>0</p>
+            </div>
+            <div class="stat_item">
+                <h3>Use Time</h3>
+                <p>0h 0m</p>
+            </div>
+            <div class="stat_item">
+                <h3>Time Since Last Task</h3>
+                <p>0d 0h</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
