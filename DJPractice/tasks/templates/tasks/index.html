@@ -5,5 +5,10 @@
         <link rel="stylesheet" href="#" />
     </head>
     <body>
+        <ul>
+            {% for task in tasks %}
+                <li> {{ task }} </li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
