@@ -6,4 +6,6 @@ def index(request):
     return render(request, "testapp/index.html")
 
 def greet(request, name):
-    return HttpResponse(f"Hello {name}!")
+    return render(request, "testapp/greet.html", {
+        "name": name.capitalize()
+    })
