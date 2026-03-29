@@ -1,13 +1,16 @@
+{% load static %}
+
 <html>
     <head>
         <title>New Years App</title>
+        <link href="{% static 'newyear/style.css' %}" rel="stylesheet"/>
     </head>
     <body>
         <h1>Greetings, Is it new years:</h1>
         {% if newyear %}
-            <h2>Yes</h2>
+            <h2 class="yes">Yes</h2>
         {% else %}
-            <h2>No</h2>
+            <h2 class="no">No</h2>
         {% endif %}
     </body>
 </html>
