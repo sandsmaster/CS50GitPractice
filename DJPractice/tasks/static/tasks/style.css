@@ -59,3 +59,8 @@ h1 {
     background-color: rgba(228, 228, 228, 0.411);
     border-radius: 50%;
 }
+
+.calendar_square.active {
+    background-color: #708a70; /* Muted green with hints of grey */
+    color: white;
+}

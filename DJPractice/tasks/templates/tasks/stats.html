@@ -33,4 +33,15 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const squares = document.querySelectorAll('.calendar_square');
+            
+            squares.forEach(square => {
+                square.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+    </script>
 {% endblock %}
